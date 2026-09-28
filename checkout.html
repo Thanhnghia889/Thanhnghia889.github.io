@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/easyzoom.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 top-left">
+                        <p><i class="fas fa-phone"></i> Hotline: 039 500 7439</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 top-center">
+                        <p><span>Ưu đãi Black Friday:</span> Giảm đến 60% với mã <span>ShoeVibe</span>.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 top-right">
+                        <img src="img/vn.png" alt="Tiếng Việt">
+                        <p class="me-4">Tiếng Việt <i class="fa-solid fa-angle-down"></i></p>
+                        <p>Việt Nam (VND ₫) <i class="fa-solid fa-angle-down"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-5 col-12 order-3 order-md-1 collapse d-md-block" id="main-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                            <li class="nav-item"><a href="product-list.html" class="nav-link active">Cửa hàng <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Trang <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                        </ul>
+                        <ul class="nav-icon nav-icon-mobile">
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a></li>
+                            <li class="nav-item cart-icon"><a href="cart.html" class="nav-link"><i class="fa-solid fa-shopping-cart"></i><span class="cart-count">1</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-8 order-1 order-md-2">
+                        <a href="index.html"><img src="img/logo1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-4 order-2 order-md-3">
+                        <button class="menu-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="nav-icon nav-icon-desktop">
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a></li>
+                            <li class="nav-item cart-icon"><a href="cart.html" class="nav-link"><i class="fa-solid fa-shopping-cart"></i><span class="cart-count">1</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="checkout-info">
+                    <h2>Thông tin thanh toán</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Họ</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Tên</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Số điện thoại</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Địa chỉ</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Tòa nhà / Tầng</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Thành phố / Tỉnh</label>
+                            <select name="" id="" class="form-select">
+                                <option selected class="">Chọn</option>
+                                <option value="">Tp Hồ Chí Minh</option>
+                                <option value="">Tp Hà Nội</option>
+                                <option value="">Tp Đà Nẵng</option>
+                                <option value="">Khánh Hòa</option>
+                                <option value="">Bình Dương</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-12 my-2">
+                            <label for="" class="form-label col-12">Phường</label>
+                            <select name="" id="" class="form-select">
+                                <option selected class="">Chọn</option>
+                                <option value="">Đông Hòa</option>
+                                <option value="">Bến Thành</option>
+                                <option value="">Bến Nghé</option>
+                                <option value="">Chợ Quán</option>
+                                <option value="">An Đông</option>
+                            </select>
+                        </div>
+                        <div class="col-12 my-2">
+                            <label for="">
+                                <input type="checkbox" id="createacc">
+                                Tạo tài khoản
+                            </label>
+                            <div id="accform">
+                                <label for="" class="form-label my-2">Tên tài khoản</label>
+                                <input type="text" class="form-control my-2" id="username">
+                                <label for="" class="form-label my-2">Mật khẩu</label>
+                                <input type="text" class="form-control my-2" id="password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="order-info">
+                    <h2 class="pb-5">Đơn hàng của bạn</h2>
+                    <table class="tb-order">
+                        <thead>
+                            <td>Sản phẩm</td>
+                            <td class="text-end">Thành tiền</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nike Air Max 1 SC</td>
+                                <td class="text-end">3.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Nike Metcon 9 AMP</td>
+                                <td class="text-end">3.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Nike Infinity RN4</td>
+                                <td class="text-end">2.500.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="line"></div>
+                    <table class="tb-total">
+                        <tbody>
+                            <tr>
+                                <td class="tb-header">Tạm tính</td>
+                                <td class="text-end">8.500.000</td>
+                            </tr>
+                            <tr>
+                                <td class="tb-header">Phí giao hàng</td>
+                                <td class="text-end">30.000</td>
+                            </tr>
+                            <tr>
+                                <td class="tb-header">Giảm giá</td>
+                                <td class="text-end">25.000</td>
+                            </tr>
+                            <tr>
+                                <td class="tb-header">Tổng cộng</td>
+                                <td class="text-end text-total">8.505.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="payment">
+                        <label for="" class="w-100">
+                            <input type="radio" name="payment" value="bank" id="bank" checked>
+                            Thanh toán Internet Banking
+                        </label>
+                        <div id="bank-content" class="w-100">
+                            <p>Quét mã QRCODE để thanh toán</p>
+                            <img src="img/qrcode.jpg" alt="" width="150">
+                        </div>
+                        <label for="">
+                            <input type="radio" name="payment" value="cod" id="cod">
+                            Thanh toán khi nhận hàng
+                        </label>
+                        <div id="cod-content" class="w-100">
+                            <p>Khách hàng vui lòng thanh toán khi nhận hàng</p>
+                        </div>
+                    </div>
+                </div>
+                    <button class="w-100 btn-shopnow mt-4" id="btn-order-success">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-4">
+        <div class="container">
+            <div class="footer-top row">
+                <div class="col-lg-2 col-md-2 mt-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="index.html" class="footer-link">Trang chủ</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Liên hệ chúng tôi</a></li>
+                        <li class="footer-item"><a href="product-list.html" class="footer-link">Sản phẩm</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Định giá</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 mt-4">
+                    <h4 class="footer-title">Tính năng</h4>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">Thống kê tổng quan</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Kết nối tài khoản</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Thanh toán & Hóa đơn</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Giao dịch</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 mt-4">
+                    <h4 class="footer-title">Tài khoản của tôi</h4>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">Đơn hàng của tôi</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Câu hỏi thường gặp</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Điều kiện bán hàng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right col-lg-6 col-md-6 mt-4">
+                    <img src="img/footer-1.png" alt="" class="footer-img">
+                    <img src="img/footer-2.png" alt="" class="footer-img">
+                    <img src="img/footer-3.png" alt="" class="footer-img">
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-middle row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer-brand mt-4">
+                        <a href="index.html" class="footer-logo"><img src="img/logo.png" alt=""></a>
+                        <div class="footer-sub">
+                            <input type="text" class="footer-input" placeholder="Địa chỉ email của bạn...">
+                            <button class="footer-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <div class="section-line"></div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-8 row">
+                    <div class="col-lg-4 col-md-4">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#" class="footer-link">Pháp lý</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Sơ đồ theo quốc gia</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Tuyên bố chống lao động cưỡng bức</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#" class="footer-link">Chính sách cookie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom row">
+                <p class="footer-copyright mt-5 mb-4">@2026 Bản quyền thuộc về  <span>ShoeVibe. </span>  Thiết kế & Phát triển bởi <span> UIPARADOX</span>.</p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/easyzoom.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+		// Instantiate EasyZoom instances
+		var $easyzoom = $('.easyzoom').easyZoom();
+
+		// Setup thumbnails example
+		var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+		$('.thumbnails').on('click', 'a', function(e) {
+			var $this = $(this);
+
+			e.preventDefault();
+
+			// Use EasyZoom's `swap` method
+			api1.swap($this.data('standard') || $this.attr('href'), $this.attr('href'));
+		});
+
+		// Setup toggles example
+		var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+
+		$('.toggle').on('click', function() {
+			var $this = $(this);
+
+			if ($this.data("active") === true) {
+				$this.text("Switch on").data("active", false);
+				api2.teardown();
+			} else {
+				$this.text("Switch off").data("active", true);
+				api2._init();
+			}
+		});
+	</script>
+</body>
+</html>

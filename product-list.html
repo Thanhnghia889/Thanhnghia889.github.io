@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Danh sách sản phẩm</title>
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="top-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 top-left">
+							<p><i class="fas fa-phone"></i> Hotline: 039 500 7439</p>
+						</div>
+						<div class="col-lg-4 col-md-4 top-center">
+							<p><span>Ưu đãi Black Friday:</span> Giảm đến 60% với mã <span>ShoeVibe</span>.</p>
+						</div>
+						<div class="col-lg-4 col-md-4 top-right">
+							<img src="img/vn.png" alt="Tiếng Việt">
+							<p class="me-4">Tiếng Việt <i class="fa-solid fa-angle-down"></i></p>
+							<p>Việt Nam (VND ₫) <i class="fa-solid fa-angle-down"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-5 col-md-5 col-12 order-3 order-md-1 collapse d-md-block" id="main-nav">
+							<ul class="nav-list">
+								<li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+								<li class="nav-item"><a href="product-list.html" class="nav-link active">Cửa hàng <i class="fa-solid fa-angle-down"></i></a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Trang <i class="fa-solid fa-angle-down"></i></a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+							</ul>
+							<ul class="nav-icon nav-icon-mobile">
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a></li>
+								<li class="nav-item cart-icon"><a href="cart.html" class="nav-link"><i class="fa-solid fa-shopping-cart"></i><span class="cart-count">1</span></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-8 order-1 order-md-2">
+							<a href="index.html"><img src="img/logo1.png" alt=""></a>
+						</div>
+						<div class="col-lg-5 col-md-5 col-4 order-2 order-md-3">
+							<button class="menu-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false">
+								<i class="fa-solid fa-bars"></i>
+							</button>
+							<ul class="nav-icon nav-icon-desktop">
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a></li>
+								<li class="nav-item cart-icon"><a href="cart.html" class="nav-link"><i class="fa-solid fa-shopping-cart"></i><span class="cart-count">1</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="bg-header">
+			<h1>Sản phẩm</h1>
+			<nav class="breadcrumb">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+					</ol>
+				</nav>
+			</nav>
+		</div>
+		<div class="container mt-5">
+			<div class="row">
+				<button id="btn-filter">Lọc <i class="fa-solid fa-filter"></i></button>
+				<div class="col-lg-3" id="sidebar">
+					<button id="sidebar-close" class="sidebar-close"><i class="fa-solid fa-close"></i></button>
+					<div class="sidebar-group">
+						<h2 class="sidebar-title">Danh mục sản phẩm</h2>
+						<div class="sidebar-line"></div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Giày Nike</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Giày chạy bộ</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Giày thể thao</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Giày lifestyle</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Phụ kiện giày</label>
+						</div>
+					</div>
+					<div class="sidebar-group">
+						<h2 class="sidebar-title">Thương hiệu</h2>
+						<div class="sidebar-line"></div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Nike</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Adidas</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Puma</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Converse</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Vans</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Jordan</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Asics</label>
+						</div>
+					</div>
+					<div class="sidebar-group">
+						<h2 class="sidebar-title">Giới tính</h2>
+						<div class="sidebar-line"></div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Nam</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Nữ</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Unisex</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Trẻ em</label>
+						</div>
+					</div>
+					<div class="sidebar-group">
+						<h2 class="sidebar-title">Màu sắc</h2>
+						<div class="sidebar-line"></div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Trắng</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Đen</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Xám</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Be</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Xanh Dương</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Xanh lá</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Đỏ</label>
+						</div>
+					</div>
+					<div class="sidebar-group">
+						<h2 class="sidebar-title">Khoảng Giá</h2>
+						<div class="sidebar-line"></div>
+						<div class="price-filter">
+							<div id="price-slider"></div>
+							<div class="price-values">
+								<span id="price-min">0</span>
+								<span id="price-max">5.000.000</span>
+							</div>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Dưới 1.000.000₫</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">1.000.000₫ - 2.000.000₫</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">2.000.000₫ - 3.000.000₫</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">3.000.000₫ - 5.000.000₫</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input">
+							<label for="" class="form-check-label">Trên 5.000.000₫</label>
+						</div>
+						
+					</div>
+					<div class="sidebar-group">
+						<h2 class="sidebar-title">Sản phẩm bán chạy</h2>
+						<div class="sidebar-line"></div>
+						<div class="sidebar-product">
+							<a href="pr-detail.html" class="sidebar-product-img">
+								<img src="img/pr-11.jpg" alt="" class="sidebar-img-main">
+								<img src="img/pr-2.jpg" alt="" class="sidebar-img-hover">
+							</a>
+
+							<div class="sidebar-product-info">
+								<h3><a href="pr-detail.html">Nike Air Max</a></h3>
+								<div class="sidebar-product-price">
+									<span class="price-new">3.000.000</span>
+									<span class="price-old">3.519.000</span>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-product">
+							<a href="pr-detail.html" class="sidebar-product-img">
+								<img src="img/pr-5.png" alt="" class="sidebar-img-main">
+								<img src="img/pr-6.jpg" alt="" class="sidebar-img-hover">
+							</a>
+
+							<div class="sidebar-product-info">
+								<h3><a href="pr-detail.html">Nike Infinity RN4</a></h3>
+								<div class="sidebar-product-price">
+									<span class="price-new">3.000.000</span>
+									<span class="price-old">3.519.000</span>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-product">
+							<a href="pr-detail.html" class="sidebar-product-img">
+								<img src="img/pr-4.jpg" alt="" class="sidebar-img-main">
+								<img src="img/pr-5.png" alt="" class="sidebar-img-hover">
+							</a>
+
+							<div class="sidebar-product-info">
+								<h3><a href="pr-detail.html">Jordan 1 Mid SE</a></h3>
+								<div class="sidebar-product-price">
+									<span class="price-new">3.000.000</span>
+									<span class="price-old">3.519.000</span>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-product">
+							<a href="pr-detail.html" class="sidebar-product-img">
+								<img src="img/pr-6.jpg" alt="" class="sidebar-img-main">
+								<img src="img/pr-1.jpg" alt="" class="sidebar-img-hover">
+							</a>
+
+							<div class="sidebar-product-info">
+								<h3><a href="pr-detail.html">Nike Metcon 9 AMP</a></h3>
+								<div class="sidebar-product-price">
+									<span class="price-new">3.000.000</span>
+									<span class="price-old">3.519.000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 product-list">
+					<div class="row">
+						<div class="col-12">
+							<button id="btn-gridview">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="32.000000pt" height="32.000000pt" viewBox="0 0 32.000000 32.000000"
+								preserveAspectRatio="xMidYMid meet">
+
+								<g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+								stroke="none">
+								<path d="M12 308 c-16 -16 -16 -110 0 -126 18 -18 103 -15 122 4 19 19 22 104
+								4 122 -16 16 -110 16 -126 0z m108 -63 l0 -45 -45 0 -45 0 0 45 0 45 45 0 45
+								0 0 -45z"/>
+								<path d="M182 308 c-18 -18 -15 -103 4 -122 19 -19 104 -22 122 -4 16 16 16
+								110 0 126 -16 16 -110 16 -126 0z m108 -63 l0 -45 -45 0 -45 0 0 45 0 45 45 0
+								45 0 0 -45z"/>
+								<path d="M12 138 c-16 -16 -16 -110 0 -126 16 -16 110 -16 126 0 18 18 15 103
+								-4 122 -19 19 -104 22 -122 4z m106 -65 l-3 -48 -40 0 -40 0 -3 48 -3 47 46 0
+								46 0 -3 -47z"/>
+								<path d="M186 134 c-19 -19 -22 -104 -4 -122 16 -16 110 -16 126 0 16 16 16
+								110 0 126 -18 18 -103 15 -122 -4z m102 -61 l-3 -48 -40 0 -40 0 -3 48 -3 47
+								46 0 46 0 -3 -47z"/>
+								</g>
+								</svg>
+							</button>
+							<button id="btn-listview">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="32.000000pt" height="32.000000pt" viewBox="0 0 32.000000 32.000000"
+								preserveAspectRatio="xMidYMid meet">
+
+								<g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+								stroke="none">
+								<path d="M4 277 c-3 -8 -4 -32 -2 -53 l3 -39 50 0 50 0 0 50 0 50 -48 3 c-34
+								2 -49 -1 -53 -11z m86 -42 c0 -33 -2 -35 -35 -35 -33 0 -35 2 -35 35 0 33 2
+								35 35 35 33 0 35 -2 35 -35z"/>
+								<path d="M140 250 c0 -6 37 -10 90 -10 53 0 90 4 90 10 0 6 -37 10 -90 10 -53
+								0 -90 -4 -90 -10z"/>
+								<path d="M140 210 c0 -6 27 -10 60 -10 33 0 60 4 60 10 0 6 -27 10 -60 10 -33
+								0 -60 -4 -60 -10z"/>
+								<path d="M4 127 c-3 -8 -4 -32 -2 -53 l3 -39 50 0 50 0 0 50 0 50 -48 3 c-34
+								2 -49 -1 -53 -11z m86 -42 c0 -33 -2 -35 -35 -35 -33 0 -35 2 -35 35 0 33 2
+								35 35 35 33 0 35 -2 35 -35z"/>
+								<path d="M145 100 c3 -5 42 -10 85 -10 43 0 82 5 85 10 4 6 -27 10 -85 10 -58
+								0 -89 -4 -85 -10z"/>
+								<path d="M145 60 c8 -13 102 -13 110 0 4 6 -17 10 -55 10 -38 0 -59 -4 -55
+								-10z"/>
+								</g>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product row">
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-3.jpg" alt="Nike Dunk Low Retro" class="product-img-main">
+										<img src="img/pr-2.jpg" alt="Nike Dunk Low Retro" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Dunk Low Retro</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-8.jpg" alt="Jordan 1 Mid" class="product-img-main">
+										<img src="img/pr-3.jpg" alt="Jordan 1 Mid" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Jordan 1 Mid</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-5.png" alt="Nike Infinity RN4" class="product-img-main">
+										<img src="img/pr-4.jpg" alt="Nike Infinity RN4" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Infinity RN4</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-3.jpg" alt="Nike Dunk Low Retro" class="product-img-main">
+										<img src="img/pr-2.jpg" alt="Nike Dunk Low Retro" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Dunk Low Retro</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-8.jpg" alt="Jordan 1 Mid" class="product-img-main">
+										<img src="img/pr-3.jpg" alt="Jordan 1 Mid" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Jordan 1 Mid</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-5.png" alt="Nike Infinity RN4" class="product-img-main">
+										<img src="img/pr-4.jpg" alt="Nike Infinity RN4" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Infinity RN4</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-3.jpg" alt="Nike Dunk Low Retro" class="product-img-main">
+										<img src="img/pr-2.jpg" alt="Nike Dunk Low Retro" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Dunk Low Retro</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-8.jpg" alt="Jordan 1 Mid" class="product-img-main">
+										<img src="img/pr-3.jpg" alt="Jordan 1 Mid" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Jordan 1 Mid</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-5.png" alt="Nike Infinity RN4" class="product-img-main">
+										<img src="img/pr-4.jpg" alt="Nike Infinity RN4" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Infinity RN4</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-3.jpg" alt="Nike Dunk Low Retro" class="product-img-main">
+										<img src="img/pr-2.jpg" alt="Nike Dunk Low Retro" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Dunk Low Retro</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-8.jpg" alt="Jordan 1 Mid" class="product-img-main">
+										<img src="img/pr-3.jpg" alt="Jordan 1 Mid" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Jordan 1 Mid</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-5.png" alt="Nike Infinity RN4" class="product-img-main">
+										<img src="img/pr-4.jpg" alt="Nike Infinity RN4" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Infinity RN4</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-3.jpg" alt="Nike Dunk Low Retro" class="product-img-main">
+										<img src="img/pr-2.jpg" alt="Nike Dunk Low Retro" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Dunk Low Retro</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-8.jpg" alt="Jordan 1 Mid" class="product-img-main">
+										<img src="img/pr-3.jpg" alt="Jordan 1 Mid" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Jordan 1 Mid</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12 mb-4">
+							<div class="product-card">
+								<div class="product-image">
+									<span class="discount-badge">-10%</span>
+									<div class="product-actions">
+										<a href="#" class="action-btn"><i class="fa-regular fa-heart"></i></a>
+										<a href="pr-detail.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+										<a href="#" class="action-btn"><i class="fa-solid fa-rotate"></i></a>
+									</div>
+									<a href="pr-detail.html" class="product-image-link">
+										<img src="img/pr-5.png" alt="Nike Infinity RN4" class="product-img-main">
+										<img src="img/pr-4.jpg" alt="Nike Infinity RN4" class="product-img-hover">
+									</a>
+								</div>
+								<h3 class="product-title">Nike Infinity RN4</h3>
+								<ul class="color-list">
+									<li style="background-color: #2563eb;" class="color-link"></li>
+									<li style="background-color: #ef4444;" class="color-link"></li>
+									<li style="background-color: #10b981;" class="color-link"></li>
+									<li style="background-color: #facc15;" class="color-link"></li>
+								</ul>
+								<ul class="size-list">
+									<li class="size-link">41</li>
+									<li class="size-link">42</li>
+									<li class="size-link">43</li>
+									<li class="size-link">44</li>
+								</ul>
+								<div class="product-bottom">
+									<div class="product-price">
+										<span class="price-new">3.000.000</span>
+										<span class="price-old">3.519.000</span>
+									</div>
+									<a href="cart.html" class="cart-btn">
+										<i class="fa-solid fa-bag-shopping"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<ul class="pagination">
+							<li class="page-item"><a href="#" class="page-link"><i class="fa-solid fa-angles-left"></i></a></li>
+							<li class="page-item active"><a href="#" class="page-link">1</a></li>
+							<li class="page-item"><a href="#" class="page-link">2</a></li>
+							<li class="page-item"><a href="#" class="page-link">3</a></li>
+							<li class="page-item"><a href="#" class="page-link">4</a></li>
+							<li class="page-item"><a href="#" class="page-link"><i class="fa-solid fa-angles-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer mt-4">
+			<div class="container">
+				<div class="footer-top row">
+					<div class="col-lg-2 col-md-2 mt-4">
+						<h4 class="footer-title">Menu</h4>
+						<ul class="footer-list">
+							<li class="footer-item"><a href="index.html" class="footer-link">Trang chủ</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Liên hệ chúng tôi</a></li>
+							<li class="footer-item"><a href="product-list.html" class="footer-link">Sản phẩm</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Định giá</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2 mt-4">
+						<h4 class="footer-title">Tính năng</h4>
+						<ul class="footer-list">
+							<li class="footer-item"><a href="#" class="footer-link">Thống kê tổng quan</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Kết nối tài khoản</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Thanh toán & Hóa đơn</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Giao dịch</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2 mt-4">
+						<h4 class="footer-title">Tài khoản của tôi</h4>
+						<ul class="footer-list">
+							<li class="footer-item"><a href="#" class="footer-link">Đơn hàng của tôi</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Câu hỏi thường gặp</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Điều kiện bán hàng</a></li>
+							<li class="footer-item"><a href="#" class="footer-link">Liên hệ</a></li>
+						</ul>
+					</div>
+					<div class="footer-right col-lg-6 col-md-6 mt-4">
+						<img src="img/footer-1.png" alt="" class="footer-img">
+						<img src="img/footer-2.png" alt="" class="footer-img">
+						<img src="img/footer-3.png" alt="" class="footer-img">
+					</div>
+				</div>
+				<div class="footer-line"></div>
+				<div class="footer-middle row">
+					<div class="col-lg-4 col-md-4">
+						<div class="footer-brand mt-4">
+							<a href="index.html" class="footer-logo"><img src="img/logo.png" alt=""></a>
+							<div class="footer-sub">
+								<input type="text" class="footer-input" placeholder="Địa chỉ email của bạn...">
+								<button class="footer-button"><i class="fa-solid fa-arrow-right"></i></button>
+							</div>
+							<div class="section-line"></div>
+						</div>
+
+					</div>
+					<div class="col-lg-8 col-md-8 row">
+						<div class="col-lg-4 col-md-4">
+							<ul class="footer-list">
+								<li class="footer-item"><a href="#" class="footer-link">Pháp lý</a></li>
+								<li class="footer-item"><a href="#" class="footer-link">Sơ đồ theo quốc gia</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<ul class="footer-list">
+								<li class="footer-item"><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+								<li class="footer-item"><a href="#" class="footer-link">Tuyên bố chống lao động cưỡng bức</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<ul class="footer-list">
+								<li class="footer-item"><a href="#" class="footer-link">Chính sách cookie</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom row">
+					<p class="footer-copyright mt-5 mb-4">@2026 Bản quyền thuộc về  <span>ShoeVibe. </span>  Thiết kế & Phát triển bởi <span> UIPARADOX</span>.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.7.1.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
