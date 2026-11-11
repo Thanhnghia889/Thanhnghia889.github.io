@@ -131,7 +131,8 @@
 }
 
 .article-breadcrumb a,
-.article-content a {
+.article-content a,
+.article-related a {
   color: #047857;
 }
 
