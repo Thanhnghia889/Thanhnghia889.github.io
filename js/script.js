@@ -197,11 +197,14 @@ document.querySelectorAll('.cart-remove').forEach(btn => {
     });
 });
 
-document.getElementById('check-all').addEventListener('change', function () {
-    document.querySelectorAll('.cart-item input[type="checkbox"]').forEach(cb => {
-        cb.checked = this.checked;
+const checkAll = document.getElementById('check-all');
+if (checkAll) {
+    checkAll.addEventListener('change', function () {
+        document.querySelectorAll('.cart-item input[type="checkbox"]').forEach(cb => {
+            cb.checked = this.checked;
+        });
     });
-});
+}
 
 function updateTotal() {
     let total = 0;
@@ -235,8 +238,11 @@ const vouchers = {
 
 let currentDiscount = 0;
 
-document.querySelector('.voucher-input button').addEventListener('click', () => {
-    const code = document.querySelector('.voucher-input input').value.trim().toUpperCase();
+const voucherButton = document.querySelector('.voucher-input button');
+const voucherInput = document.querySelector('.voucher-input input');
+if (voucherButton && voucherInput) {
+    voucherButton.addEventListener('click', () => {
+        const code = voucherInput.value.trim().toUpperCase();
     
     let total = 0;
     document.querySelectorAll('.cart-item').forEach(item => {
@@ -254,10 +260,13 @@ document.querySelector('.voucher-input button').addEventListener('click', () => 
     }
     updateTotal();
 });
+}
 
 let checkoutAlert = null;
 
-document.querySelector('.btn-checkout').addEventListener('click', () => {
+const checkoutButton = document.querySelector('.btn-checkout');
+if (checkoutButton) {
+    checkoutButton.addEventListener('click', () => {
     const checked = document.querySelectorAll('.cart-item input[type="checkbox"]:checked');
     if (checked.length === 0) {
         alert('Vui lòng chọn ít nhất 1 sản phẩm!');
@@ -265,3 +274,4 @@ document.querySelector('.btn-checkout').addEventListener('click', () => {
     }
     window.location.href = 'checkout.html';
 });
+}
