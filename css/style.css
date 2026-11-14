@@ -1124,7 +1124,8 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #ECFDF5;
 }
 
-.pr-detail-item h1 {
+.pr-detail-item h1,
+.pr-detail-item h2 {
   color: #000;
   font-weight: 700;
   font-size: 60px;
@@ -1759,7 +1760,8 @@ input[type=number] {
   .pr-detail-item {
     margin-top: 32px;
   }
-  .pr-detail-item h1 {
+  .pr-detail-item h1,
+.pr-detail-item h2 {
     font-size: 44px;
   }
   .order-info {
@@ -1900,7 +1902,8 @@ input[type=number] {
   .deal-card .deal-info {
     gap: 12px;
   }
-  .pr-detail-item h1 {
+  .pr-detail-item h1,
+.pr-detail-item h2 {
     font-size: 34px;
   }
   .pr-detail-item .pr-price {
